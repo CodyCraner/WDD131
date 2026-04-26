@@ -1,0 +1,54 @@
+#top
+{
+    text-align: center;
+}
+
+#top h1{
+    font-size: 60px;
+}
+
+#top p {
+    margin-top: 25px;
+    font-size: 25px;
+    color: blue;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content {
+    margin-top: 75px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#content p {
+    text-align: left;
+    margin: 25px 275px;
+    line-height: 1.5;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: outside;
+    max-width: 500px;
+    margin: 25px auto;
+    line-height: 1.5;
+}
+
+
+#logo{
+    text-align: center;
+    
+}
+
+img{
+    margin-top: 50px;
+    width: 300px;
+}
