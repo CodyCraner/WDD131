@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+body {
+    background-color: #ddd;
+    font-size: 20px;
+}
+#content {
+    max-width: 60%;
+    margin: 40px auto;
+    border: 1px solid darkgrey;
+    padding: 50px;
+}
+p {
+    color: #035f9c;
+    font-size: 1.3em;
+}
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    margin: 30px auto;
+    width: 80%;
+}
+h1, h2, p {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+#topics {
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+.list {
+    list-style-type: none;
+}
+.new-list{
+    list-style-type: disc;
+    color: purple;
+}        
+    </style>
+    
+</head>
+<body>
+    
+<div id="content">
+    <h1>HTML, CSS, and JS</h1>
+    
+    <p>The foundational technologies that power websites and web applications</p>
+    <hr>
+    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+    <div id="topics">
+        <h2>HyperText Markup Language</h2>
+        <ul class="list">
+            <li>Defines the structure and content of a web page.</li>
+            <li>Without HTML there's nothing for the browser to display.</li>
+        </ul>
+        <h2>Cascading Style Sheets</h2>
+        <ul class="list">
+            <li>Controls how the HTML elements look.</li>
+            <li>Without CSS pages look plain and unstyled.</li>
+        </ul>
+        <h2>JavaScript</h2>
+        <ul class="list">
+            <li>Adds interactivity and dynamic behavior.</li>
+            <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+        </ul>
+    </div>
+</div>
+<script>
+        console.log(document);
+        // anyway we want to change DOM, use document
+        let firstList = document.querySelector(".list");
+        firstList.style.backgroundColor = "#FF0000";
+
+        let content = document.getElementById("content");
+        content.style.color = "#0000FF";
+
+        document.querySelector("img").setAttribute("src", "portrait.png");
+        document.querySelector("img").setAttribute("alt", "new alt tag");
+
+        document.querySelector("h1").textContent = "NEW TEXT";
+
+        let headingText = document.querySelector("h1").textContent;
+        console.log(headingText);
+
+        firstList.className = "new-list";
+
+
+        // Also could be querySelectorAll, selects all elements titled "ul" and we call the 1 in the array
+        document.getElementsByTagName("ul")[1].style.backgroundColor = "pink";
+
+        
+
+    </script>
+</body>
+</html>
