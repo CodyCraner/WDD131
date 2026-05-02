@@ -36,10 +36,11 @@ hr {
 }
 
 .list {
-    list-style: outside;
+    list-style: decimal;
     max-width: 500px;
     margin: 25px auto;
     line-height: 1.5;
+    text-align: left;
 }
 
 
