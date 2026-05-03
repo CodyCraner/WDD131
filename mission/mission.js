@@ -12,9 +12,11 @@ function changeTheme() {
         logo.setAttribute("src","byui-logo-white.png");
 
     } else {
+    //resets to default
         document.body.style.backgroundColor = "#fff";
         document.body.style.color = "black";
         logo.setAttribute("src","byui-logo.webp");
     }
+
 }           
                     
