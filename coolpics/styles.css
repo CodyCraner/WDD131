@@ -1,0 +1,46 @@
+header, footer{
+    background-color: #0012ff;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+nav a{
+    color: white;
+    display: none;
+}
+
+section{
+     padding: 5px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 12px 13px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width: 500px) and (max-width: 1199px) {
+    main{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (min-width: 1200px){
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
