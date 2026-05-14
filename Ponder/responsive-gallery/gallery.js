@@ -11,7 +11,7 @@ function openModal(e) {
 // Code to show modal  - Use event parameter 'e'
 let imageSrc = event.target.src;
 
-// select img tage inside dialog, give it src
+// select img tage inside dialog, assign it src
 modalImage.src = imageSrc.replace("-sm","-full");
 
 modal.showModal ();
