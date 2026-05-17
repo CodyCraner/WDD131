@@ -2,63 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Cole Harris" desciption="Storing photos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" font="roboto">
     <link rel="stylesheet" href="styles.css">
-    <title>Coolpics</title>
+    <script defer src="coolpics.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Cool Pics &#128248;</h1>
-        <button class="menu-btn">
-            <p>Menu</p>
+    <header> 
+        <h1>Cool Pics 📷</h1>
+        <button id = "butte">
+            <h2>Menu</h2>
         </button>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">People</a>
-    <a href="#">Places</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-
-  </nav>
-        
+        <nav class="hide">
+            <a href="#">Home</a>
+            <a href="#">People</a>
+            <a href="#">Places</a>
+            <a href="#">Contact Us</a>
+        </nav>
     </header>
-
-    <h2>Current Work</h2>
-
     <main>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-        <section>
-            <img src="norris.jpg" alt="geysers">
-        </section>
-
+        Current Work
+        <div class="gallery">
+            <figure>
+                <img src="norris-sm.jpg" alt="picture1">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture2">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture3">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture4">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture5">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture6">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture7">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture8">
+            </figure>
+            <figure>
+                <img src="norris-sm.jpg" alt="picture9">
+            </figure>
+        </div>
+        <dialog id="image-modal">
+            <img id="modal-image" src="" alt="">
+            <button class="close-viewer">X</button>
+        </dialog>
     </main>
-
-    <footer>
-            <p>Not an Actual Website 2026</p>
-        </footer>
-    
+    <footer>Copyright 2023 - Not a real site</footer>
 </body>
 </html>

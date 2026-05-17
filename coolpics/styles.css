@@ -1,39 +1,88 @@
-header, footer{
-    background-color: #0012ff;
+header, main, footer{
+    text-align:center;
+    margin: 1rem auto;
+    padding: 2px;
+    background-color: blue; 
     color: white;
-    text-align: center;
-    margin: 0;
-}
-nav a{
-    color: white;
-    display: none;
 }
 
-section{
-     padding: 5px;
-    background-color: white;
-    margin: 1em;
-    border: 1px solid #ccc;
-    box-shadow: 12px 13px 15px 0px rgba(0, 0, 0, 0.20);
-    border-radius: 2px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+
+a{
+    color:white;
+    
+
+    min-width: 200px;
+    display:block;
 }
-main{
-    display: grid;
+
+.hide {
+    display:none;
+}
+
+
+figure{
+    display:inline;
+}
+img{
+    max-width: 100%;
+    margin:20px;
+    border: white 10px solid;
+    height: 250px;
+    object-fit:cover;
+}
+button{
+    
+    background: none;
+    
+}
+  
+#image-modal img {
+    max-width: 150%;
+    height: 50vh;
+    display: block;
+    background-color: rgba(0,0,0,.6);
+    margin:20vh auto;
+    z-index:10;
+  }
+.close-viewer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+   
+  }
+  .gallery{
+     display: grid;
     grid-template-columns: 1fr;
-}
-@media screen and (min-width: 500px) and (max-width: 1199px) {
-    main{
-    grid-template-columns: 1fr 1fr;
-}
-}
-@media screen and (min-width: 1200px){
-main{
-    grid-template-columns: 1fr 1fr 1fr;
-}
+  }
+
+@media screen and (min-width: 500px) and (max-width: 1199px){
+   
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .hide {
+        display:none;
+    }
 }
 
+@media screen and (min-width: 1200px){
+    
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    h2{
+        display:none;
+    }
+    .hide{
+        display:block;
+    }
+}
 
 
 
