@@ -1,7 +1,7 @@
 header, main, footer{
     text-align:center;
     margin: 1rem auto;
-    padding: 2px;
+    padding: 5px;
     background-color: blue; 
     color: white;
 }
@@ -9,8 +9,6 @@ header, main, footer{
 
 a{
     color:white;
-    
-
     min-width: 200px;
     display:block;
 }
