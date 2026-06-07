@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>document</title>
+  <link rel="stylesheet" href="ticket.css" />
+   <script src="script.js" defer></script>
+</head>
+<body>
+ 
+  <div class="container">
+    <h1>Event Sign-Up</h1>
+ 
+    <form id="signupForm">
+ 
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" placeholder="Jane" />
+ 
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Smith" />
+ 
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="jane@example.com" />
+ 
+      <label for="eventDate">Event Date</label>
+      <input type="date" id="eventDate" />
+ 
+      <label for="attendeeType">Type</label>
+      <select id="attendeeType">
+        <option value="">— Select —</option>
+        <option value="student">Student</option>
+        <option value="guest">Guest</option>
+      </select>
+ 
+      <div id="idField" class="hidden">
+        <label for="idInput" id="idLabel">Student I#</label>
+        <input type="text" id="idInput" placeholder="" />
+      </div>
+ 
+      <button type="button" onclick="submitForm()">Register</button>
+ 
+    </form>
+ 
+    <ul id="errorList" class="errors hidden"></ul>
+ 
+    <div id="ticket" class="ticket hidden">
+      <h2>You're registered!</h2>
+      <p><strong>Name:</strong> <span id="tName"></span></p>
+      <p><strong>Email:</strong> <span id="tEmail"></span></p>
+      <p><strong>Date:</strong> <span id="tDate"></span></p>
+      <p><strong>Type:</strong> <span id="tType"></span></p>
+      <p><strong id="tIdLabel">Student I#:</strong> <span id="tId"></span></p>
+      <p class="ticket-num">Ticket: <span id="ticketNum"></span></p>
+    </div>
+  </div>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+ 
+.container {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 30px;
+  width: 100%;
+  max-width: 440px;
+}
+ 
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+ 
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333333;
+}
+ 
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+}
+ 
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3366cc;
+}
+ 
+input.error,
+select.error {
+  border-color: #cc0000;
+}
+ 
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: #3366cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+ 
+button:hover {
+  background: #2255bb;
+}
+ 
+.hidden {
+  display: none;
+}
+ 
+/* Errors */
+.errors {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #fff0f0;
+  border: 1px solid #ffaaaa;
+  border-radius: 4px;
+  list-style: none;
+  color: #cc0000;
+  font-size: 14px;
+}
+ 
+.errors li {
+  margin-bottom: 4px;
+}
+ 
+.errors li:last-child {
+  margin-bottom: 0;
+}
+ 
+/* Ticket */
+.ticket {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f0fff4;
+  border: 1px solid #88cc99;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #222222;
+}
+ 
+.ticket h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #1a6b3a;
+}
+ 
+.ticket p {
+  margin-bottom: 6px;
+}
+ 
+.ticket-num {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666666;
+}
