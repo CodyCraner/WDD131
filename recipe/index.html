@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.css" type="module" defer></script>
+
+    <meta property="og:title" content="recipes">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Delicious recipes">
+    <meta property="og:image" content="images/recipe-book.png"> 
+</head>
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="recipe book logo">
+        <h1>Recipe Book</h1>
+
+    </header>
+
+    <main>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Find a recipe">
+            <button type="submit">
+                <img src="images/search.svg" alt="search">
+            </button>
+        </form>
+        <section id="recipe-list">
+            <section class="recipe-card">
+                <img src="images/apple-crisp.jpg" alt="sweet potato waffle">
+                <h2>Apple Crisp</h2>
+                <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served with warm vanilla ice cream.</p>
+            
+                <!-- Star Rating -->
+                <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+                >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
