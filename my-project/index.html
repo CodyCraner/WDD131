@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spurs Team Builder</title>
+<link rel="stylesheet" href="project.css">
+<script defer src="project.js"></script>
+
+</head>
+<body>
+<header>
+  <h1>Spurs Team Builder</h1>
+  <div class="fiesta-bar"><span></span><span></span><span></span><span></span></div>
+  <p>Build a five-man Spurs lineup. Better overall players score more points — type a name in each slot and see your total. Unknown players score zero.</p>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>Starting Lineup</h2>
+
+    <div class="slot"><div class="pos">PG</div><input type="text" class="player-input" data-slot="0"></div>
+    <div class="slot"><div class="pos">SG</div><input type="text" class="player-input" data-slot="1"></div>
+    <div class="slot"><div class="pos">SF</div><input type="text" class="player-input" data-slot="2"></div>
+    <div class="slot"><div class="pos">PF</div><input type="text" class="player-input" data-slot="3"></div>
+    <div class="slot"><div class="pos">C</div><input type="text" class="player-input" data-slot="4"></div>
+
+    <div class="btn-row">
+      <button id="build-btn">Build Lineup</button>
+    </div>
+
+    <div class="message" id="error-message"></div>
+  </section>
+
+  <section class="panel scoreboard">
+    <h2>Scoreboard</h2>
+    <div class="total-label">Total Points</div>
+    <div class="total-points" id="total-points">0</div>
+  </section>
+</main>
+
+</body>
+</html>
